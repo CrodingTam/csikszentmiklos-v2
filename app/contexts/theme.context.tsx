@@ -1,4 +1,4 @@
-import { Theme } from "@mui/material";
+import { CssBaseline, Theme, ThemeProvider } from "@mui/material";
 import {
   Dispatch,
   FC,
@@ -42,7 +42,12 @@ const CustomThemeProvider: FC<Props> = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={themeContextValue}>
-      {children}
+      {activeTheme && (
+        <ThemeProvider theme={activeTheme}>
+          <CssBaseline />
+          {children}
+        </ThemeProvider>
+      )}
     </ThemeContext.Provider>
   );
 };
