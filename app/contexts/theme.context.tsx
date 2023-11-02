@@ -40,7 +40,6 @@ const CustomThemeProvider: FC<Props> = ({ children }) => {
     }
   }, [activeTheme]);
 
-  console.log(activeTheme, "-active theme right now");
   return (
     <ThemeContext.Provider value={themeContextValue}>
       {children}
