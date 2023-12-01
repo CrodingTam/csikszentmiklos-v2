@@ -1,8 +1,8 @@
+"use client";
 import { FC } from "react";
 import StyledWrapper from "./style";
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import MenuItems from "../items/component";
-import Img from "@/app/components/image/component";
 
 const DesktopMenuBar: FC = () => {
   return (

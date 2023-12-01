@@ -6,9 +6,7 @@ import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(List)(() => ({
   display: "flex",
-  ".MuiListItem-root": {
-    paddingRight: "30px",
-  },
+  ".MuiListItem-root": {},
   ".logo-item": {
     width: "fit-content",
     marginRight: "150px",
@@ -24,6 +22,7 @@ const StyledWrapper = styled(List)(() => ({
         top: "-30px",
         width: "225px",
         height: "225px",
+        cursor: "pointer",
       },
     },
   },
