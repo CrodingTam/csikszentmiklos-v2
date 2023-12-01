@@ -1,13 +1,15 @@
 import { FC } from "react";
 import StyledWrapper from "./style";
-import { Toolbar } from "@mui/material";
+import { Container, Toolbar } from "@mui/material";
 import DesktopMenuBar from "./desktop/component";
 
 const MenuBar: FC = () => {
   return (
     <StyledWrapper>
       <Toolbar>
-        <DesktopMenuBar />
+        <Container maxWidth="xl">
+          <DesktopMenuBar />
+        </Container>
       </Toolbar>
     </StyledWrapper>
   );

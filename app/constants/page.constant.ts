@@ -7,6 +7,7 @@ const pages: PageModel[] = [
     title: "Csikszentmiklos",
     description: "Csikszentmiklos lorem ipsum",
     keywords: ["home", "future home"],
+    position: "left",
   },
   {
     label: "Contact",
@@ -14,6 +15,7 @@ const pages: PageModel[] = [
     title: "Contact Us",
     description: "Contact us lorem ipsum",
     keywords: ["home", "future home"],
+    position: "left",
   },
   {
     label: "Community",
@@ -21,6 +23,7 @@ const pages: PageModel[] = [
     title: "Be part of the community",
     description: "Community lorem ipsum",
     keywords: ["home", "future home"],
+    position: "left",
   },
   {
     label: "Economy",
@@ -28,6 +31,7 @@ const pages: PageModel[] = [
     title: "Csikszentmiklos's economy",
     description: "Economy lorem ipsum",
     keywords: ["home", "future home"],
+    position: "right",
   },
   {
     label: "Gallery",
@@ -35,6 +39,7 @@ const pages: PageModel[] = [
     title: "Gallery",
     description: "Gallery lorem ipsum",
     keywords: ["home", "future home"],
+    position: "right",
   },
   {
     label: "Institutions",
@@ -42,6 +47,7 @@ const pages: PageModel[] = [
     title: "Institutions",
     description: "Institutions lorem ipsum",
     keywords: ["home", "future home"],
+    position: "right",
   },
 ];
 
@@ -51,6 +57,7 @@ const unknowPage: PageModel = {
   title: "",
   description: "",
   keywords: [],
+  position: "left",
 };
 
 export { pages, unknowPage };

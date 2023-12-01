@@ -1,7 +1,4 @@
-import {
-  TypographyStyle,
-  TypographyStyleOptions,
-} from "@mui/material/styles/createTypography";
+import { TypographyStyle, TypographyStyleOptions } from "@mui/material/styles/createTypography";
 
 interface CustomTypography {
   [index: string]: TypographyStyleOptions | TypographyStyle | string | number;
@@ -55,6 +52,10 @@ export const customVariant = {
     fontFamily: "RalewaySemiBold",
     fontSize: "26px",
     letterSpacing: "0.15px",
+  },
+  subtitle1: {
+    fontFamily: "RalewayExtraBold",
+    fontSize: "16px",
   },
   h4: {},
   h5: {},
