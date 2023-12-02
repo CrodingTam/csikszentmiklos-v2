@@ -4,4 +4,5 @@ export interface PageModel {
   title: string;
   description: string;
   keywords: string[];
+  position: "right" | "left";
 }

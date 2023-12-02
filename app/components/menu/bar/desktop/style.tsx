@@ -4,8 +4,10 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(Grid)(() => ({
+  display: "flex",
+  width: "100%",
   alignItems: "center",
-  ".logo-holder": {},
+  justifyContent: "center",
   ".menu-items-holder": {},
 }));
 
