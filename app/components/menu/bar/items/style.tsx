@@ -26,12 +26,27 @@ const StyledWrapper = styled(List)(() => ({
       },
     },
   },
-
   ".page-item": {
-    ".MuiTypography-root": {
+    ".inactive-link": {
+      "&:before": {
+        content: "''",
+        position: "absolute",
+        width: "0",
+        height: "3px",
+        bottom: "60px",
+        left: "50%",
+        transform: "translate(-50%, 0%)",
+        backgroundColor: lightTheme.palette.primary.main,
+        visibility: "hidden",
+        transition: "all 0.3s ease-in-out",
+      },
+      "&:hover:before": {
+        visibility: "visible",
+        width: "80%",
+      },
+    },
+    ".label": {
       textTransform: "uppercase",
-      color: lightTheme.palette.black.main,
-      fontWeight: "800",
     },
   },
 }));
