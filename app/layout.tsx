@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Providers from "./utils/providers.utils";
 import MenuBar from "./components/menu/bar/component";
+import FooterBar from "./components/footer/component";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           <MenuBar />
           {children}
+          <FooterBar />
         </Providers>
       </body>
     </html>

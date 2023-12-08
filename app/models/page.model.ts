@@ -1,4 +1,4 @@
-export interface PageModel {
+export interface PageItemModel {
   label: string;
   route: string;
   title: string;

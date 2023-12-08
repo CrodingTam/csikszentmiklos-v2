@@ -5,7 +5,7 @@ import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(Container)(() => ({
   marginTop: "200px",
-  maxWidth: "1200px",
+  maxWidth: "1200px !important",
 }));
 
 export default StyledWrapper;
