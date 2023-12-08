@@ -1,6 +1,6 @@
-import { PageModel } from "../models/page.model";
+import { PageItemModel } from "../models/page.model";
 
-const pages: PageModel[] = [
+const pageItems: PageItemModel[] = [
   {
     label: "Home",
     route: "/",
@@ -51,7 +51,7 @@ const pages: PageModel[] = [
   },
 ];
 
-const unknowPage: PageModel = {
+const unknowPage: PageItemModel = {
   label: "Unknown",
   route: "/",
   title: "",
@@ -60,4 +60,4 @@ const unknowPage: PageModel = {
   position: "left",
 };
 
-export { pages, unknowPage };
+export { pageItems, unknowPage };

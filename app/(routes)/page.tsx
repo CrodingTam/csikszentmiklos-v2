@@ -1,11 +1,11 @@
 import { Grid } from "@mui/material";
-import CommonContainer from "../components/container/component";
+import Container from "../components/container/component";
 
 const Home = () => {
   return (
-    <CommonContainer>
+    <Container>
       <Grid container>Home page</Grid>
-    </CommonContainer>
+    </Container>
   );
 };
 
