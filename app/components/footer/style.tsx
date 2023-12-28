@@ -46,7 +46,7 @@ const StyledWrapper = styled(Box)(() => ({
         display: "flex",
         ".logo": {
           backgroundColor: lightTheme.palette.background.default,
-          borderRadius: "10%",
+          borderRadius: "5px",
           img: {
             marginLeft: "-7px",
             marginTop: "-7px",

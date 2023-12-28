@@ -20,8 +20,8 @@ const StyledWrapper = styled(List)(() => ({
       ".logo": {
         position: "absolute",
         top: "-40px",
-        width: "200px",
-        height: "200px",
+        width: "170px",
+        height: "170px",
         cursor: "pointer",
       },
     },
