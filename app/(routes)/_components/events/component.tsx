@@ -3,6 +3,7 @@ import StyledWrapper from "./style";
 import { Grid, Typography } from "@mui/material";
 import EventCards from "@/app/components/event-card/component";
 import { EventCardModel } from "@/app/models/event-card.model";
+import CommonHeader from "@/app/components/common-header/component";
 
 //static data temporarily
 const staticEventCards: EventCardModel[] = [
@@ -23,14 +24,14 @@ const staticEventCards: EventCardModel[] = [
 
 const Events: FC = () => {
   return (
-    <StyledWrapper container>
-      <Grid item className="title-item">
-        <Typography variant="h2">Upcoming events</Typography>
-      </Grid>
-      <Grid item className="event-card-item">
-        <EventCards cards={staticEventCards} />
-      </Grid>
-    </StyledWrapper>
+    <>
+      <CommonHeader text="Upcoming Events" />
+      <StyledWrapper container>
+        <Grid item className="event-card-item">
+          <EventCards cards={staticEventCards} />
+        </Grid>
+      </StyledWrapper>
+    </>
   );
 };
 
