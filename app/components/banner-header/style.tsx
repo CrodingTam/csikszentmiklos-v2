@@ -35,7 +35,7 @@ const StyledWrapper = styled(Grid)(() => ({
         height: "80px",
         width: "fit-content",
         backgroundColor: lightTheme.palette.primary.main,
-        borderRadius: "5px",
+        borderRadius: "10px",
         bottom: "4px",
         left: "0",
         right: "0",
