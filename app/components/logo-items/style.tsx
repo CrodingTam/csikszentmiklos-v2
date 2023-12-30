@@ -14,7 +14,7 @@ const StyledWrapper = styled(Grid)(() => ({
         display: "flex",
         ".logo": {
           backgroundColor: lightTheme.palette.background.default,
-          borderRadius: "5px",
+          borderRadius: "50%",
           width: "75px",
           height: "75px",
         },

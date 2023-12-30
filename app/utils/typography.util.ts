@@ -45,19 +45,23 @@ export const customVariant = {
   },
   h2: {
     fontFamily: "RalewaySemiBold",
-    fontSize: "36px",
+    fontSize: "38px",
     letterSpacing: "0.15px",
   },
   h3: {
     fontFamily: "RalewaySemiBold",
-    fontSize: "26px",
+    fontSize: "28px",
     letterSpacing: "0.15px",
   },
   subtitle1: {
     fontFamily: "RalewayExtraBold",
     fontSize: "16px",
   },
-  h4: {},
+  h4: {
+    fontFamily: "RalewaySemiBold",
+    fontSize: "18px",
+    letterSpacing: "0.15px",
+  },
   h5: {},
   h6: {},
   default: {
