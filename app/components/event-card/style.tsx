@@ -8,7 +8,8 @@ const StyledWrapper = styled(Grid)(() => ({
   justifyContent: "space-between",
   gap: lightTheme.spacing(3),
   "> .MuiGrid-item": {
-    border: "2px solid black",
+    border: "2px solid",
+    borderColor: lightTheme.palette.black.main,
     borderRadius: "10px",
     width: "550px",
     height: "600px",
