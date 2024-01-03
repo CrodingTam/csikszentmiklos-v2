@@ -24,7 +24,7 @@ const EventCards: FC<Props> = ({ cards }) => {
             <Typography variant="h3">{card.name}</Typography>
           </Box>
           <Box className="description-box">
-            <Typography variant="h4">{card.description}</Typography>
+            <Typography variant="mainMedium">{card.description}</Typography>
           </Box>
           <Box className="timer-box">
             <TimeCounter date={card.eventDate} />

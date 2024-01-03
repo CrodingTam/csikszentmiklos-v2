@@ -10,7 +10,7 @@ const StyledWrapper = styled(Grid)(() => ({
   flexDirection: "column",
   ".image-item": {
     width: "100%",
-    height: "60vh",
+    height: "75vh",
     ".MuiBox-root": {
       width: "100%",
       height: "100%",

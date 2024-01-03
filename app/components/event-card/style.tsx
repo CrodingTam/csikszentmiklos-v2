@@ -8,8 +8,6 @@ const StyledWrapper = styled(Grid)(() => ({
   justifyContent: "space-between",
   gap: lightTheme.spacing(3),
   "> .MuiGrid-item": {
-    border: "2px solid",
-    borderColor: lightTheme.palette.black.main,
     borderRadius: "10px",
     width: "550px",
     height: "600px",
@@ -18,7 +16,7 @@ const StyledWrapper = styled(Grid)(() => ({
     flexDirection: "column",
     gap: lightTheme.spacing(5),
     padding: "10px",
-    boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;",
+    boxShadow: "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",
     "> .logo-box": {
       width: "100%",
       display: "flex",
