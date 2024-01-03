@@ -16,7 +16,7 @@ const Introduction: FC = () => {
       <StyledWrapper container>
         <Grid item className="description-item">
           <Typography variant="h2">Csíkszentmiklós</Typography>
-          <Typography variant="h3">Our Heritage</Typography>
+          <Typography variant="h3">Our heritage</Typography>
           <Typography variant="h4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
             has been the industrys standard dummy text ever since the 1500s.

@@ -3,6 +3,7 @@ import Container from "../components/container/component";
 import BannerHeader from "../components/banner-header/component";
 import Events from "./_components/events/component";
 import Introduction from "./_components/introduction/component";
+import Curiosities from "./_components/curiosities/component";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Container>
         <Introduction />
         <Events />
+        <Curiosities />
       </Container>
     </>
   );
