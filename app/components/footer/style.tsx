@@ -15,6 +15,7 @@ const StyledWrapper = styled(Box)(() => ({
     flexDirection: "column",
     justifyContent: "center",
     gap: lightTheme.spacing(8),
+    marginTop: "140px",
     ".MuiTypography-root": {
       textTransform: "uppercase",
     },
