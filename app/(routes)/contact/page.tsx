@@ -1,11 +1,17 @@
-import CommonContainer from "@/app/components/container/component";
-import { Grid } from "@mui/material";
+import Container from "@/app/components/container/component";
+import ContactCard from "./_components/contact-card/component";
+import Header from "@/app/components/common-header/component";
+import GoogleMap from "./_components/google-map/component";
 
 const Contact = () => {
   return (
-    <CommonContainer>
-      <Grid container>Contact page</Grid>
-    </CommonContainer>
+    <>
+      <Header text="Contact us" sx={{ marginTop: "180px !important" }} isPage />
+      <Container>
+        <ContactCard />
+        <GoogleMap />
+      </Container>
+    </>
   );
 };
 

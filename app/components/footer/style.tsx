@@ -28,11 +28,9 @@ const StyledWrapper = styled(Box)(() => ({
     ".footer-downer-container": {
       justifyContent: "space-between",
       ".MuiGrid-item:nth-of-type(2)": {
-        paddingRight: "17%",
+        paddingRight: "15%",
       },
     },
-
-    // common
     ".footer-item": {
       display: "flex",
       flexDirection: "column",
