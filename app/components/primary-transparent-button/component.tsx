@@ -7,25 +7,30 @@ type Props = {
   text: string;
   onClick?: () => void;
   width?: string;
+  height?: string;
   marginTop?: string;
   className?: string;
   paddingTop?: string;
   sx?: SxProps<Theme>;
+  type?: "submit" | "reset" | "button";
 };
 
 const PrimaryTransparentButton: FC<Props> = ({
   text,
   onClick = () => {},
   width,
+  height,
   marginTop,
   className,
   sx,
+  type,
 }) => {
   return (
     <Button
       className={className}
       variant="outlined"
       onClick={onClick}
+      type={type}
       sx={{
         "&:hover": {
           backgroundColor: "primary.main",
@@ -35,14 +40,14 @@ const PrimaryTransparentButton: FC<Props> = ({
         },
         borderWidth: "2px",
         borderRadius: "5px",
-        height: "44px",
+        height: height ?? "44px",
         width: width ?? "60px",
         marginTop: marginTop ?? 0,
         borderColor: "primary.main",
         ...sx,
       }}
     >
-      <Typography variant="mainSemiBold" sx={{ fontSize: 14 }}>
+      <Typography variant="mainBold" sx={{ fontSize: 14 }}>
         {text}
       </Typography>
     </Button>

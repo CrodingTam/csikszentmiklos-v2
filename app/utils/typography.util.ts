@@ -34,13 +34,14 @@ declare module "@mui/material/Typography" {
     main: true;
     mainMedium: true;
     mainSemiBold: true;
+    mainBold: true;
   }
 }
 
 export const customVariant = {
   h1: {
     fontFamily: "RalewaySemiBold",
-    fontSize: "48px",
+    fontSize: "67px",
     letterSpacing: "0.15px",
   },
   h2: {
