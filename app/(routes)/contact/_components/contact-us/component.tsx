@@ -4,9 +4,10 @@ import { TextField, CircularProgress, Typography, Box } from "@mui/material";
 import PrimaryTransparentButton from "@/app/components/primary-transparent-button/component";
 import StyledWrapper from "./style";
 import Img from "@/app/components/image/component";
+import { EmailFormData, sendEmail } from "@/app/api/services/mail.service";
+import { enqueueSnackbar } from "notistack";
 
 const ContactUs: FC = () => {
-  // const { sendEmail } = useMailService();
   const [loading, setLoading] = useState<boolean>(false);
   let nameRef = useRef<HTMLInputElement>(null);
   let emailRef = useRef<HTMLInputElement>(null);
@@ -15,20 +16,21 @@ const ContactUs: FC = () => {
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
     setLoading(true);
     e.preventDefault();
-
-    // const formData: EmailFormData = {
-    //   name: nameRef.current?.querySelector("input")?.value || "",
-    //   email: emailRef.current?.querySelector("input")?.value || "",
-    //   message: messageRef.current?.value || "",
-    // };
-    // const result = await sendEmail(formData);
-    // if (result === "success") {
-    //   nameRef.current!.querySelector("input")!.value = "";
-    //   emailRef.current!.querySelector("input")!.value = "";
-    //   messageRef.current!.value = "";
-    //   setOptions({} as Options);
-    // }
-    // setLoading(false);
+    const formData: EmailFormData = {
+      name: nameRef.current?.querySelector("input")?.value || "",
+      email: emailRef.current?.querySelector("input")?.value || "",
+      message: messageRef.current?.value || "",
+    };
+    const result = await sendEmail(formData);
+    if (result === "success") {
+      nameRef.current!.querySelector("input")!.value = "";
+      emailRef.current!.querySelector("input")!.value = "";
+      messageRef.current!.value = "";
+      enqueueSnackbar("E-mail sent succesfully!", { variant: "success" });
+    } else {
+      enqueueSnackbar("E-mail sent succesfully!", { variant: "success" });
+    }
+    setLoading(false);
   };
 
   return (
