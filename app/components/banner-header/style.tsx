@@ -27,7 +27,7 @@ const StyledWrapper = styled(Grid)(() => ({
       marginTop: "40px",
       position: "absolute",
       display: "flex",
-      maxWidth: "1200px",
+      maxWidth: "1400px",
       width: "100%",
       zIndex: "1",
       "> .MuiBox-root": {
