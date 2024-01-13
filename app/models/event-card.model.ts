@@ -1,5 +1,3 @@
-import { DateTime } from "luxon";
-
 export interface EventCardModel {
   eventDate: string;
   name: string;
