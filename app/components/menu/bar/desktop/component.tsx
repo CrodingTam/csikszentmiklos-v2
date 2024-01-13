@@ -6,7 +6,7 @@ import MenuItems from "../items/component";
 
 const DesktopMenuBar: FC = () => {
   return (
-    <StyledWrapper className="desktop-menu-bar">
+    <StyledWrapper container className="desktop-menu-bar">
       <Grid item className="menu-items-holder">
         <MenuItems />
       </Grid>

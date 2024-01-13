@@ -6,6 +6,7 @@ import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(List)(() => ({
   display: "flex",
+  justifyContent: "space-between",
   ".MuiListItem-root": {},
   ".logo-item": {
     width: "fit-content",
@@ -27,7 +28,13 @@ const StyledWrapper = styled(List)(() => ({
     },
   },
   ".page-item": {
-    ".inactive-link": {
+    width: "fit-content",
+    paddingLeft: "0px",
+    paddingRight: "0px",
+    ".link": {
+      width: "fit-content !important",
+    },
+    ".inactive": {
       "&:before": {
         content: "''",
         position: "absolute",
@@ -42,7 +49,7 @@ const StyledWrapper = styled(List)(() => ({
       },
       "&:hover:before": {
         visibility: "visible",
-        width: "80%",
+        width: "100%",
       },
     },
     ".label": {

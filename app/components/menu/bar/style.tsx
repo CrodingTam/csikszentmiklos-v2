@@ -7,6 +7,9 @@ import { styled } from "@mui/material/styles";
 const StyledWrapper = styled(AppBar)(() => ({
   boxShadow: "none",
   backgroundColor: lightTheme.palette.background.default,
+  ".menu-container": {
+    maxWidth: "1400px",
+  },
 }));
 
 export default StyledWrapper;
