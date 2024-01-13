@@ -11,7 +11,8 @@ const StyledWrapper = styled(Grid)(() => ({
   overflow: "hidden",
   padding: "50px",
   flexDirection: "row",
-  ".MuiGrid-item": {
+  height: "610px",
+  ".contact-form": {
     width: "50%",
     display: "flex",
     justifyContent: "center",

@@ -49,7 +49,7 @@ const StyledWrapper = styled(List)(() => ({
       },
       "&:hover:before": {
         visibility: "visible",
-        width: "80%",
+        width: "100%",
       },
     },
     ".label": {

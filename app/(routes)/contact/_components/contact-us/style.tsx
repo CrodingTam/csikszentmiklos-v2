@@ -5,10 +5,13 @@ import { Box } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(Box)(() => ({
+  height: "100%",
   ".contact-us-form": {
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
+    justifyContent: "space-between",
+    height: "100%",
     [lightTheme.breakpoints.up("lg")]: {
       width: "377px",
     },
@@ -21,7 +24,6 @@ const StyledWrapper = styled(Box)(() => ({
     ".MuiInputLabel-shrink": {
       paddingLeft: "5px",
     },
-    gap: lightTheme.spacing(2),
     ".input-wrapper": {
       width: "100%",
       display: "flex",
