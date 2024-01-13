@@ -35,7 +35,7 @@ const MenuItems: FC = () => {
     return (
       <ListItem key={index} className="page-item" onClick={() => handleActiveItemChange()}>
         <CustomLink
-          className={activeItem?.route === item.route ? "active-link" : "inactive-link"}
+          className={`link ${activeItem?.route === item.route ? "active" : "inactive"}`}
           url={item.route}
         >
           <Typography

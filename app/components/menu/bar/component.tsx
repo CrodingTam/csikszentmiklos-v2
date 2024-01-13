@@ -6,11 +6,9 @@ import DesktopMenuBar from "./desktop/component";
 const MenuBar: FC = () => {
   return (
     <StyledWrapper>
-      <Toolbar>
-        <Container maxWidth="xl">
-          <DesktopMenuBar />
-        </Container>
-      </Toolbar>
+      <Container className="menu-container">
+        <DesktopMenuBar />
+      </Container>
     </StyledWrapper>
   );
 };
