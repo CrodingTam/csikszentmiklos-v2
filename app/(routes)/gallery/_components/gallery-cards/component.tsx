@@ -44,15 +44,17 @@ const GalleryCards: FC = () => {
   return (
     <StyledWrapper container>
       {staticCards.map((card, index) => (
-        <Grid item key={index} className="card-item" onClick={() => to(`/gallery/${card.name}`)}>
-          <Img className="image-box" src={card.src} alt={card.title} />
-          <Box className="text-box">
-            <Typography className="title" variant="mainBold">
-              {card.title}
-            </Typography>
-            <Typography className="subtitle" variant="mainMedium">
-              Click here for more content
-            </Typography>
+        <Grid item key={index} className="card-item">
+          <Box className="card-box" onClick={() => to(`/gallery/${card.name}`)}>
+            <Img className="image-box" src={card.src} alt={card.title} />
+            <Box className="text-box">
+              <Typography className="title" variant="mainBold">
+                {card.title}
+              </Typography>
+              <Typography className="subtitle" variant="mainMedium">
+                Click here for more content
+              </Typography>
+            </Box>
           </Box>
         </Grid>
       ))}
