@@ -20,8 +20,10 @@ const zoomInAnimation = keyframes`
 `;
 
 const StyledWrapper = styled(Grid)(() => ({
-  justifyContent: "center",
+  height: "50px",
   ".arrow-item": {
+    position: "relative",
+    left: "48%",
     ".MuiBox-root": {
       width: "55px",
       height: "55px",

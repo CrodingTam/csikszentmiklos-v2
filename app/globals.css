@@ -65,3 +65,19 @@ body {
   format: ("ttf");
   font-display: swap;
 }
+
+.MuiPaper-root {
+  padding-right: 0px !important;
+}
+
+.yarl__no_scroll {
+  padding-right: 0px !important;
+}
+
+.yarl__thumbnails_thumbnail {
+  border: none !important;
+}
+
+.yarl__thumbnails_thumbnail_active {
+  border: 1px solid white !important;
+}

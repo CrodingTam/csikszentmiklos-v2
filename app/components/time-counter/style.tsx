@@ -33,7 +33,7 @@ const StyledWrapper = styled(Grid)(() => ({
       "> .MuiTypography-root": {
         fontSize: "20px",
         fontWeight: 600,
-        marginTop: "30px",
+        marginTop: "40px",
       },
     },
   },

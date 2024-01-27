@@ -32,7 +32,7 @@ export const sendEmail = async (formData: EmailFormData): Promise<"success" | "e
       to: SMTP_EMAIL,
       replyTo: formData.email,
       subject: `Csíkszentmiklós weboldala`,
-      html: `<div><h1>Név</h1><p>${formData.name}</p><h1>E-mail</h1><h1>Üzenet</h1>${formData.message}</div>`,
+      html: `<div><h1>Név</h1><p>${formData.name}</p><h1>E-mail</h1><p>${formData.email}</p><h1>Üzenet</h1><p>${formData.message}</p></div>`,
     });
     return "success";
   } catch (e) {

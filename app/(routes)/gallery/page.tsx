@@ -1,14 +1,11 @@
 import Header from "@/app/components/common-header/component";
-import { Container, Grid } from "@mui/material";
-import GalleryCards from "./_components/gallery-card/component";
+import GalleryCards from "./_components/gallery-cards/component";
+import Container from "@/app/components/container/component";
 
 const Gallery = () => {
   return (
     <>
-      <Header
-        text="Get to know our community through images"
-        sx={{ marginTop: "180px !important" }}
-      />
+      <Header text="Get to know our community through images" type="page" />
       <Container>
         <GalleryCards />
       </Container>

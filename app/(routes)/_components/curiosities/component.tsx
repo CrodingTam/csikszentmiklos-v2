@@ -86,7 +86,7 @@ const Curiosities: FC = () => {
 
   return (
     <>
-      <CommonHeader text="Curiosities" />
+      <CommonHeader text="Curiosities" type="component" />
       <StyledWrapper container>
         {curiosities.map((curiosity) => (
           <Grid className="curiosity-item" item key={curiosity.value}>

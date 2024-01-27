@@ -5,7 +5,6 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(Grid)(() => ({
-  marginTop: "14vh",
   alignItems: "center",
   flexDirection: "column",
   ".image-item": {

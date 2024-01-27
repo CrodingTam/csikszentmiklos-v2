@@ -2159,6 +2159,11 @@ react-is@^18.2.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-photo-album@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-photo-album/-/react-photo-album-2.3.0.tgz#262afa60691d8ed5e25b8c8a73cec339ec515652"
+  integrity sha512-CU+UMK4ZQHIoPZ672TSst9loKE5bxy6w0+bf7bY4XOw1g1C7+VdDWCW+wD8wPpbg2ve38QBTS73HVe6xYLAQ3w==
+
 react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
@@ -2626,6 +2631,11 @@ yaml@^1.10.0:
   version "1.10.2"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
+
+yet-another-react-lightbox@^3.16.0:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/yet-another-react-lightbox/-/yet-another-react-lightbox-3.16.0.tgz#96f4602ed6438584e76a08fa9728beff4f9deb19"
+  integrity sha512-pDcdBs7gpn35jV0d30rSIMB9nKM77vFoSLPWXcM1BDF5CZcYguoesSWD9GMZN3CxDvDon2GlMaCLPguyZUyWZQ==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
