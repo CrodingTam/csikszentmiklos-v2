@@ -19,7 +19,10 @@
     "nodemailer": "^6.9.8",
     "notistack": "^3.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-photo-album": "^2.3.0",
+    "sharp": "^0.33.2",
+    "yet-another-react-lightbox": "^3.16.0"
   },
   "devDependencies": {
     "@types/luxon": "^3.3.6",

@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import StyledWrapper from "./style";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import Img from "@/app/components/image/component";
 import CommonHeader from "@/app/components/common-header/component";
 import PrimaryTransparentButton from "@/app/components/primary-transparent-button/component";
@@ -12,7 +12,7 @@ const Introduction: FC = () => {
   const { externalTo } = useNavigation();
   return (
     <>
-      <CommonHeader text="Introduction" />
+      <CommonHeader text="Introduction" type="component" />
       <StyledWrapper container>
         <Grid item className="description-item">
           <Typography variant="h2">Csíkszentmiklós</Typography>

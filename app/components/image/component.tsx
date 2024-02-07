@@ -3,7 +3,6 @@
 import { CircularProgress, SxProps, Theme } from "@mui/material";
 import NextImage from "next/image";
 import { FC, useCallback, useEffect, useState } from "react";
-import { DateTime } from "luxon";
 import StyledWrapper from "./style";
 
 interface ImageDimensions {
@@ -95,9 +94,11 @@ const Img: FC<Props> = ({
       }}
       onClick={onClick}
     >
+      {/* disable version */}
+      {/* src={disableVersion ? src : `${src}?v=${DateTime.now().toMillis()}`} */}
       <NextImage
         priority
-        src={disableVersion ? src : `${src}?v=${DateTime.now().toMillis()}`}
+        src={src}
         alt={alt}
         fill
         sizes="100%"

@@ -1,11 +1,15 @@
-import CommonContainer from "@/app/components/container/component";
-import { Grid } from "@mui/material";
+import Header from "@/app/components/common-header/component";
+import GalleryCards from "./_components/gallery-cards/component";
+import Container from "@/app/components/container/component";
 
 const Gallery = () => {
   return (
-    <CommonContainer>
-      <Grid container>Gallery page</Grid>
-    </CommonContainer>
+    <>
+      <Header text="Get to know our community through images" type="page" />
+      <Container>
+        <GalleryCards />
+      </Container>
+    </>
   );
 };
 

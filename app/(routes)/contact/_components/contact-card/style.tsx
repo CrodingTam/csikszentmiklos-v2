@@ -11,7 +11,7 @@ const StyledWrapper = styled(Grid)(() => ({
   overflow: "hidden",
   padding: "50px",
   flexDirection: "row",
-  height: "610px",
+  height: "630px",
   ".contact-form": {
     width: "50%",
     display: "flex",
