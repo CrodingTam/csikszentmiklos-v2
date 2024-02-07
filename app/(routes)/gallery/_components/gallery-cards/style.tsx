@@ -12,7 +12,7 @@ const StyledWrapper = styled(Grid)(() => ({
     padding: "10px",
     ".card-box": {
       height: "500px",
-      padding: "15px",
+      padding: "5px",
       width: "100%",
       position: "relative",
       boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
