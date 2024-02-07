@@ -1,12 +1,5 @@
 import { CssBaseline, Theme, ThemeProvider } from "@mui/material";
-import {
-  Dispatch,
-  FC,
-  SetStateAction,
-  createContext,
-  useEffect,
-  useState,
-} from "react";
+import { Dispatch, FC, SetStateAction, createContext, useEffect, useState } from "react";
 import { getActiveTheme, lightTheme } from "../utils/theme.utils";
 
 interface ThemeContextType {
@@ -14,7 +7,7 @@ interface ThemeContextType {
   setActiveTheme: Dispatch<SetStateAction<Theme | null>>;
 }
 
-const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
+export const ThemeContext = createContext<ThemeContextType>({} as ThemeContextType);
 
 type Props = {
   children: React.ReactNode;
