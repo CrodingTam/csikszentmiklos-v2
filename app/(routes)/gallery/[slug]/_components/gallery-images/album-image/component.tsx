@@ -2,7 +2,7 @@ import Image from "next/image";
 import type { RenderPhotoProps } from "react-photo-album";
 import StyledWrapper from "./style";
 
-const AlbumNextJsImage = ({
+const PhotoAlbumImage = ({
   photo,
   imageProps: { alt, title, sizes, className, onClick },
   wrapperStyle,
@@ -20,4 +20,4 @@ const AlbumNextJsImage = ({
   );
 };
 
-export default AlbumNextJsImage;
+export default PhotoAlbumImage;

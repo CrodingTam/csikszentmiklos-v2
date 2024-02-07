@@ -10,9 +10,9 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/styles.css";
-import NextJsImage from "./lightbox-image/component";
-import AlbumNextJsImage from "./album-image/component";
+import PhotoAlbumImage from "./album-image/component";
 import { CircularProgress, Grid } from "@mui/material";
+import LightboxImage from "./lightbox-image/component";
 
 const GalleryImages: FC = () => {
   const [index, setIndex] = useState<number>(-1);
@@ -27,7 +27,7 @@ const GalleryImages: FC = () => {
           targetRowHeight={300}
           photos={photos}
           onClick={({ index }) => setIndex(index)}
-          renderPhoto={AlbumNextJsImage}
+          renderPhoto={PhotoAlbumImage}
         />
       </Grid>
 
@@ -36,7 +36,7 @@ const GalleryImages: FC = () => {
         open={index >= 0}
         index={index}
         close={() => setIndex(-1)}
-        render={{ slide: NextJsImage, thumbnail: NextJsImage }}
+        render={{ slide: LightboxImage, thumbnail: LightboxImage }}
         plugins={[Slideshow, Thumbnails, Zoom]}
       />
     </StyledWrapper>
