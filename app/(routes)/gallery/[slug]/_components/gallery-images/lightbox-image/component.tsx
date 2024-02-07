@@ -38,11 +38,10 @@ const LightboxImage = ({ slide, offset, rect }: any) => {
   return (
     <StyledWrapper style={{ width, height }}>
       <Image
-        priority
         fill
         alt={"lightbox-image"}
         src={slide}
-        loading="eager"
+        loading="lazy"
         draggable={false}
         placeholder={slide.blurDataURL ? "blur" : undefined}
         style={{

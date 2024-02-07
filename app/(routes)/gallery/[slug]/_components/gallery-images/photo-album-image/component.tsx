@@ -10,7 +10,6 @@ const PhotoAlbumImage = ({
   return (
     <StyledWrapper style={{ ...wrapperStyle }}>
       <Image
-        priority
         fill
         src={photo}
         placeholder={"blurDataURL" in photo ? "blur" : undefined}

@@ -10,7 +10,7 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import "yet-another-react-lightbox/styles.css";
-import PhotoAlbumImage from "./album-image/component";
+import PhotoAlbumImage from "./photo-album-image/component";
 import { CircularProgress, Grid } from "@mui/material";
 import LightboxImage from "./lightbox-image/component";
 
