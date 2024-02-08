@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Providers from "./utils/providers.utils";
-import MenuBar from "./components/menu/bar/component";
 import FooterBar from "./components/footer/component";
+import MenuBar from "./components/menu-bar/menu-bar.component";
 
 export const metadata: Metadata = {
   title: "Csíkszentmiklós's website",

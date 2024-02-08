@@ -1,17 +1,17 @@
 "use client";
 
 import { PageItemModel } from "@/app/models/page.model";
-import { getAllPageItem, getLeftPageItems, getRightPageItems } from "@/app/utils/page.util";
+import { getLeftPageItems, getRightPageItems } from "@/app/utils/page.util";
 import { Box, ListItem, Typography } from "@mui/material";
 import { FC, useCallback, useEffect, useState } from "react";
-import StyledWrapper from "./style";
+import StyledWrapper from "./items.style";
 import Img from "@/app/components/image/component";
 import useNavigation from "@/app/hooks/navigation.hook";
 import CustomLink from "@/app/components/link/component";
 import { usePathname } from "next/navigation";
 import { pageItems } from "@/app/constants/page.constant";
 
-const MenuItems: FC = () => {
+const Items: FC = () => {
   const { to } = useNavigation();
   const rightItems: PageItemModel[] = getRightPageItems();
   const leftItems: PageItemModel[] = getLeftPageItems();
@@ -22,10 +22,6 @@ const MenuItems: FC = () => {
     let page = pageItems.find((item) => item.route === pathName);
     setActiveItem(page);
   }, [pathName]);
-
-  const handleMouseLeave = () => {
-    handleActiveItemChange();
-  };
 
   useEffect(() => {
     handleActiveItemChange();
@@ -70,4 +66,4 @@ const MenuItems: FC = () => {
   );
 };
 
-export default MenuItems;
+export default Items;
