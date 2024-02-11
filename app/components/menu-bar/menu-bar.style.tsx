@@ -10,12 +10,12 @@ const StyledWrapper = styled(AppBar)(({ theme }) => ({
   position: "sticky",
   ".menu-bar--container": {
     maxWidth: "1400px",
-    [theme.breakpoints.up("lg")]: {
+    [theme.breakpoints.up("md")]: {
       ".menu-bar-mobile--grid-container": {
         display: "none",
       },
     },
-    [theme.breakpoints.down("lg")]: {
+    [theme.breakpoints.down("md")]: {
       ".menu-bar-desktop--grid-container": {
         display: "none",
       },

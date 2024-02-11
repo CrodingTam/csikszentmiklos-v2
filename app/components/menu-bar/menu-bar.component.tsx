@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import StyledWrapper from "./menu-bar.style";
 import { Container } from "@mui/material";

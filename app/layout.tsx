@@ -5,7 +5,7 @@ import FooterBar from "./components/footer/component";
 import MenuBar from "./components/menu-bar/menu-bar.component";
 
 export const metadata: Metadata = {
-  title: "Csíkszentmiklós's website",
+  title: "Csíkszentmiklós",
   description: "Get to know our community through this website",
 };
 

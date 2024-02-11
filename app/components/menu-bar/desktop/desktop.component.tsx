@@ -1,4 +1,3 @@
-"use client";
 import { FC } from "react";
 import StyledWrapper from "./desktop.style";
 import { Grid } from "@mui/material";

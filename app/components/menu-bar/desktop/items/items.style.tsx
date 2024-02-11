@@ -1,37 +1,26 @@
 "use client";
 
-import { lightTheme } from "@/app/utils/theme.utils";
 import { List } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const StyledWrapper = styled(List)(() => ({
+const StyledWrapper = styled(List)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
-  ".MuiListItem-root": {},
-  ".logo-item": {
+  ".desktop-items--list-item-logo": {
     width: "fit-content",
-    marginRight: "150px",
-    marginLeft: "150px",
-    ".logo-holder": {
-      display: "flex",
-      justifyContent: "center",
-      position: "relative",
-      width: "175px",
-      height: "100px",
-      ".logo": {
-        position: "absolute",
-        top: "-40px",
-        width: "170px",
-        height: "170px",
-        cursor: "pointer",
-      },
+    marginRight: "50px",
+    marginLeft: "50px",
+    paddingTop: "0px",
+    paddingBottom: "0px",
+    [theme.breakpoints.down("xl")]: {
+      margin: 0,
     },
   },
-  ".page-item": {
+  ".desktop-items--list-item": {
     width: "fit-content",
     paddingLeft: "0px",
     paddingRight: "0px",
-    ".link": {
+    ".desktop-items--link": {
       width: "fit-content !important",
     },
     ".inactive": {
@@ -43,7 +32,7 @@ const StyledWrapper = styled(List)(() => ({
         bottom: "35px",
         left: "50%",
         transform: "translate(-50%, 0%)",
-        backgroundColor: lightTheme.palette.primary.main,
+        backgroundColor: theme.palette.primary.main,
         visibility: "hidden",
         transition: "all 0.3s ease-in-out",
       },
@@ -52,8 +41,11 @@ const StyledWrapper = styled(List)(() => ({
         width: "100%",
       },
     },
-    ".label": {
+    ".desktop-items--typography": {
       textTransform: "uppercase",
+      [theme.breakpoints.down("lg")]: {
+        fontSize: "14px",
+      },
     },
   },
 }));

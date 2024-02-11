@@ -1,18 +1,14 @@
-"use client";
-
 import { PageItemModel } from "@/app/models/page.model";
 import { getLeftPageItems, getRightPageItems } from "@/app/utils/page.util";
-import { Box, ListItem, Typography } from "@mui/material";
+import { ListItem, Typography } from "@mui/material";
 import { FC, useCallback, useEffect, useState } from "react";
 import StyledWrapper from "./items.style";
-import Img from "@/app/components/image/component";
-import useNavigation from "@/app/hooks/navigation.hook";
 import CustomLink from "@/app/components/link/component";
 import { usePathname } from "next/navigation";
 import { pageItems } from "@/app/constants/page.constant";
+import Logo from "../../logo/logo.component";
 
 const Items: FC = () => {
-  const { to } = useNavigation();
   const rightItems: PageItemModel[] = getRightPageItems();
   const leftItems: PageItemModel[] = getLeftPageItems();
   const [activeItem, setActiveItem] = useState<PageItemModel | undefined>(undefined);
@@ -29,13 +25,19 @@ const Items: FC = () => {
 
   const renderPageItem = (item: PageItemModel, index: number): JSX.Element => {
     return (
-      <ListItem key={index} className="page-item" onClick={() => handleActiveItemChange()}>
+      <ListItem
+        key={index}
+        className="desktop-items--list-item"
+        onClick={() => handleActiveItemChange()}
+      >
         <CustomLink
-          className={`link ${activeItem?.route === item.route ? "active" : "inactive"}`}
+          className={`desktop-items--link ${
+            activeItem?.route === item.route ? "active" : "inactive"
+          }`}
           url={item.route}
         >
           <Typography
-            className="label"
+            className="desktop-items--typography"
             variant="subtitle1"
             sx={{
               color: activeItem?.route === item.route ? "primary.main" : "black !important",
@@ -49,17 +51,10 @@ const Items: FC = () => {
   };
 
   return (
-    <StyledWrapper className="menu-items">
+    <StyledWrapper className="desktop-items--list">
       {leftItems.map(renderPageItem)}
-      <ListItem className="logo-item">
-        <Box className="logo-holder" position={"relative"}>
-          <Img
-            className="logo"
-            alt="csikszentmiklos-logo"
-            src="/images/csikszentmiklos_logo.png"
-            onClick={() => to("/")}
-          />
-        </Box>
+      <ListItem className="desktop-items--list-item-logo">
+        <Logo />
       </ListItem>
       {rightItems.map(renderPageItem)}
     </StyledWrapper>
