@@ -8,9 +8,10 @@ import { pageItems } from "@/app/constants/page.constant";
 
 type Props = {
   item: PageItemModel;
+  onClickItem?: () => void;
 };
 
-const NavigationItem: FC<Props> = ({ item }) => {
+const NavigationItem: FC<Props> = ({ item, onClickItem = () => {} }) => {
   const [activeItem, setActiveItem] = useState<PageItemModel | undefined>(undefined);
   const pathName = usePathname();
 
@@ -24,7 +25,13 @@ const NavigationItem: FC<Props> = ({ item }) => {
   }, [handleActiveItemChange, pathName]);
 
   return (
-    <StyledWrapper className="navigation-item--list-item" onClick={() => handleActiveItemChange()}>
+    <StyledWrapper
+      className="navigation-item--list-item"
+      onClick={() => {
+        handleActiveItemChange();
+        onClickItem();
+      }}
+    >
       <CustomLink
         className={`navigation-item--link ${
           activeItem?.route === item.route ? "active" : "inactive"

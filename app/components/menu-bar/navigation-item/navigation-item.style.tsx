@@ -27,6 +27,11 @@ const StyledWrapper = styled(ListItem)(({ theme }) => ({
       visibility: "visible",
       width: "100%",
     },
+    [theme.breakpoints.down("md")]: {
+      "&:hover:before": {
+        width: "unset",
+      },
+    },
   },
   ".navigation-item--typography": {
     textTransform: "uppercase",
