@@ -3,7 +3,7 @@
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const StyledWrapper = styled(Grid)(() => ({
+const StyledWrapper = styled(Grid)(({ theme }) => ({
   justifyContent: "space-between",
   alignItems: "center",
   ".menu-bar-mobile--grid-item:nth-of-type(1)": {},
@@ -14,6 +14,10 @@ const StyledWrapper = styled(Grid)(() => ({
       ".menu-bar-mobile--menu-icon": {
         width: "50px",
         height: "50px",
+        [theme.breakpoints.down("sm")]: {
+          width: "40px",
+          height: "40px",
+        },
       },
     },
   },

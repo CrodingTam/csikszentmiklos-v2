@@ -7,7 +7,6 @@ import { KeyboardArrowUp, Menu } from "@mui/icons-material";
 const Mobile: FC = () => {
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 
-  console.log(menuIsOpen);
   return (
     <StyledWrapper container className="menu-bar-mobile--grid-container">
       <Grid item className="menu-bar-mobile--grid-item">
