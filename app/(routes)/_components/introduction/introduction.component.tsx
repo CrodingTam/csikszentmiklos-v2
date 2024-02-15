@@ -15,20 +15,30 @@ const Introduction: FC = () => {
       <CommonHeader text="Introduction" type="component" />
       <StyledWrapper container className="introduction--grid-container">
         <Grid item xxs={6} className="introduction--grid-item">
-          <Typography variant="h2">Csíkszentmiklós</Typography>
-          <Typography variant="h3">Our heritage</Typography>
-          <Typography variant="h4">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-            has been the industrys standard dummy text ever since the 1500s.
-          </Typography>
-          <Box>
-            <PrimaryTransparentButton
-              text="More Info"
-              onClick={() => {
-                externalTo("https://hu.wikipedia.org/wiki/Cs%C3%ADkszentmikl%C3%B3s");
-              }}
-              width="fit-content"
-            />
+          <Box className="introduction--box">
+            <Typography className="introduction--typography" variant="h2">
+              Csíkszentmiklós
+            </Typography>
+            <Typography className="introduction--typography" variant="h3">
+              Our heritage
+            </Typography>
+            <Typography className="introduction--typography description" variant="h4">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+              has been the industrys standard dummy text ever since the 1500s.Lorem Ipsum is simply
+              dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industrys standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of
+              the printing and typesetting industry. Lorem Ipsum has been the industrys standard
+              dummy text ever since the 1500s.
+            </Typography>
+            <Box>
+              <PrimaryTransparentButton
+                text="More Info"
+                onClick={() => {
+                  externalTo("https://hu.wikipedia.org/wiki/Cs%C3%ADkszentmikl%C3%B3s");
+                }}
+                width="fit-content"
+              />
+            </Box>
           </Box>
         </Grid>
         <Grid item xxs={6} className="introduction--grid-item">

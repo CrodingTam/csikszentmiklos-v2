@@ -32,7 +32,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    bottom: "10px",
+    bottom: "20px",
     backgroundColor: theme.palette.white.main,
     borderRadius: "50%",
     ".MuiSvgIcon-root": {
@@ -45,7 +45,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
     opacity: 0.5,
     borderRadius: "50%",
     position: "absolute",
-    bottom: "10px",
+    bottom: "20px",
   },
   ".zoomer": {
     animation: `${zoomInAnimation} 3s infinite`,

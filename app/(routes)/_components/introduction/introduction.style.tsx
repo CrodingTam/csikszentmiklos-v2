@@ -14,14 +14,22 @@ const StyledWrapper = styled(Grid)(() => ({
   height: "500px",
   overflow: "hidden",
   ".introduction--grid-item:nth-of-type(1)": {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    padding: "30px",
-    gap: lightTheme.spacing(7),
-    "> .MuiBox-root": {
+    ".introduction--box": {
       display: "flex",
+      flexDirection: "column",
       justifyContent: "center",
+      padding: "30px",
+      gap: lightTheme.spacing(7),
+      ".introduction--typography": {
+        textAlign: "center",
+      },
+      ".description": {
+        textAlign: "left",
+      },
+      "> .MuiBox-root": {
+        display: "flex",
+        justifyContent: "center",
+      },
     },
   },
   ".introduction--grid-item:nth-of-type(2)": {
