@@ -21,8 +21,12 @@ const BannerHeader: FC = () => {
           </Box>
         </Box>
       </Box>
-      <Grid xs={12} item className="image-item">
-        <Img src="/images/home/csikszentmiklos_banner.jpg" alt="csikszentmiklos-banner" />
+      <Grid className="banner-header--grid-item" item xs={12}>
+        <Img
+          className="banner-header-image"
+          src="/images/home/csikszentmiklos_banner.jpg"
+          alt="csikszentmiklos-banner"
+        />
       </Grid>
       <ScrollDownArrow />
     </StyledWrapper>

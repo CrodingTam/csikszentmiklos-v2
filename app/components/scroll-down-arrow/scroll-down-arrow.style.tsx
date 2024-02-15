@@ -23,9 +23,17 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
   width: "100%",
   display: "flex",
   justifyContent: "center",
-  ".MuiBox-root": {
+  ".scroll-down-arrow--box": {
     width: "70px",
     height: "70px",
+    [theme.breakpoints.down("lg")]: {
+      width: "60px",
+      height: "60px",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "50px",
+      height: "50px",
+    },
   },
   ".scroll-down-arrow--box:nth-of-type(1)": {
     position: "absolute",
@@ -38,6 +46,10 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
     ".MuiSvgIcon-root": {
       width: "60px",
       height: "60px",
+      [theme.breakpoints.down("md")]: {
+        width: "50px",
+        height: "50px",
+      },
     },
   },
   ".scroll-down-arrow--box:nth-of-type(2)": {

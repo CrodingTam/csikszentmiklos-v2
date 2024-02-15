@@ -6,9 +6,9 @@ import { styled } from "@mui/material/styles";
 const StyledWrapper = styled(Grid)(({ theme }) => ({
   alignItems: "center",
   flexDirection: "column",
-  ".image-item": {
+  ".banner-header--grid-item": {
     width: "100%",
-    ".MuiBox-root": {
+    ".banner-header-image": {
       position: "relative",
       width: "100%",
       height: "94vh",
@@ -57,9 +57,39 @@ const StyledWrapper = styled(Grid)(({ theme }) => ({
           zIndex: 10,
           color: theme.palette.white.main,
           textAlign: "left",
+          [theme.breakpoints.down("lg")]: {
+            fontSize: "30px",
+            lineHeight: "30px",
+          },
+          [theme.breakpoints.down("md")]: {
+            fontSize: "25px",
+            lineHeight: "25px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            fontSize: "20x",
+            lineHeight: "20px",
+          },
         },
         ".title": {
+          fontSize: "55px",
+          lineHeight: "55px",
           letterSpacing: "0px",
+          [theme.breakpoints.down("lg")]: {
+            fontSize: "45px",
+            lineHeight: "45px",
+          },
+          [theme.breakpoints.down("md")]: {
+            fontSize: "40px",
+            lineHeight: "40px",
+          },
+          [theme.breakpoints.down("sm")]: {
+            fontSize: "30px",
+            lineHeight: "30px",
+          },
+          [theme.breakpoints.down("xs")]: {
+            fontSize: "25px",
+            lineHeight: "25px",
+          },
         },
       },
     },
