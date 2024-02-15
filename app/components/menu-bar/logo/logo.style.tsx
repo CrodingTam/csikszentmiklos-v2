@@ -7,11 +7,13 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   position: "relative",
-  width: "175px",
-  height: "100px",
+  width: "100%",
+  height: "100%",
+  marginTop: "21px",
+  alignItems: "center",
   [theme.breakpoints.down("lg")]: {
-    width: "100px",
-    height: "95px",
+    width: "100%",
+    marginTop: 0,
   },
   [theme.breakpoints.down("md")]: {
     width: "80px",
@@ -26,10 +28,13 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
   },
   ".menu-bar-logo--image": {
     position: "absolute",
-    top: "-30px",
+    // top: "-50px",
     width: "155px",
-    height: "155px",
+    height: "140px",
     cursor: "pointer",
+    backgroundColor: theme.palette.background.default,
+    borderRadius: "50%",
+    boxShadow: "0px 9px 8px -7px rgba(0,0,0,0.45)",
     [theme.breakpoints.down("lg")]: {
       top: "-20px",
       width: "130px",
@@ -38,7 +43,9 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
     [theme.breakpoints.down("md")]: {
       top: "-18px",
       width: "120px",
-      height: "120px",
+      height: "110px",
+      background: "unset",
+      boxShadow: "none",
     },
     [theme.breakpoints.down("sm")]: {
       top: "-14px",

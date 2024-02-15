@@ -70,7 +70,7 @@ export const customVariant = {
     fontSize: "16px",
   },
   main: {
-    fontFamily: "Raleway",
+    fontFamily: "RalewayLight",
     fontSize: "16px",
   },
   mainMedium: {

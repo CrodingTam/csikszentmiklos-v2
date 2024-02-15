@@ -16,7 +16,7 @@ const StyledWrapper = styled(ListItem)(({ theme }) => ({
       position: "absolute",
       width: "0",
       height: "3px",
-      bottom: "35px",
+      bottom: "5px",
       left: "50%",
       transform: "translate(-50%, 0%)",
       backgroundColor: theme.palette.primary.main,
