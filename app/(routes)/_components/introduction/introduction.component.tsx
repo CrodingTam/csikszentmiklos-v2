@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import StyledWrapper from "./style";
+import StyledWrapper from "./introduction.style";
 import { Box, Grid, Typography } from "@mui/material";
 import Img from "@/app/components/image/component";
 import CommonHeader from "@/app/components/common-header/component";
@@ -13,8 +13,8 @@ const Introduction: FC = () => {
   return (
     <>
       <CommonHeader text="Introduction" type="component" />
-      <StyledWrapper container>
-        <Grid item className="description-item">
+      <StyledWrapper container className="introduction--grid-container">
+        <Grid item xxs={6} className="introduction--grid-item">
           <Typography variant="h2">Csíkszentmiklós</Typography>
           <Typography variant="h3">Our heritage</Typography>
           <Typography variant="h4">
@@ -31,7 +31,7 @@ const Introduction: FC = () => {
             />
           </Box>
         </Grid>
-        <Grid item className="image-item">
+        <Grid item xxs={6} className="introduction--grid-item">
           <Img alt="csikszentmiklos-summer" src="/images/csikszentmiklos_summer.jpg" />
         </Grid>
       </StyledWrapper>

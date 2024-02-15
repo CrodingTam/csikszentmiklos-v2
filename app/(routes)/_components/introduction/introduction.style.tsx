@@ -13,19 +13,18 @@ const StyledWrapper = styled(Grid)(() => ({
   width: "100%",
   height: "500px",
   overflow: "hidden",
-  ".description-item": {
+  ".introduction--grid-item:nth-of-type(1)": {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     padding: "30px",
     gap: lightTheme.spacing(7),
-    width: "50%",
     "> .MuiBox-root": {
       display: "flex",
       justifyContent: "center",
     },
   },
-  ".image-item": {
+  ".introduction--grid-item:nth-of-type(2)": {
     width: "50%",
     ".MuiBox-root": {
       width: "100%",

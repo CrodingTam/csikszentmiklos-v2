@@ -1,7 +1,7 @@
 import Container from "../components/container/component";
 import BannerHeader from "../components/banner-header/banner-header.component.tsx";
 import Events from "./_components/events/component";
-import Introduction from "./_components/introduction/component";
+import Introduction from "./_components/introduction/introduction.component";
 import Curiosities from "./_components/curiosities/component";
 
 const Home = () => {
