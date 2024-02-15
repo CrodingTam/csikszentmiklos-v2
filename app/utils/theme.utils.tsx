@@ -14,7 +14,8 @@ const standardThemeConfig: ThemeOptions = {
       main: "#cfd8d3",
     },
     background: {
-      default: "#eeddd3",
+      // #eeddd3
+      default: "#ffefe5",
     },
     white: {
       main: "#ffffff",

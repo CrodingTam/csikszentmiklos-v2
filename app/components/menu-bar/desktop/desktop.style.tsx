@@ -8,7 +8,7 @@ const StyledWrapper = styled(Grid)(() => ({
   width: "100%",
   alignItems: "center",
   justifyContent: "center",
-  ".menu-items-holder": {
+  ".menu-bar-desktop--grid-item": {
     width: "100%",
   },
 }));
