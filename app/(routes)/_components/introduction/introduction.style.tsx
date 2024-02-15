@@ -17,9 +17,9 @@ const StyledWrapper = styled(Grid)(() => ({
     ".introduction--box": {
       display: "flex",
       flexDirection: "column",
-      justifyContent: "center",
-      padding: "30px",
-      gap: lightTheme.spacing(7),
+      justifyContent: "space-between",
+      padding: "25px",
+      height: "100%",
       ".introduction--typography": {
         textAlign: "center",
       },

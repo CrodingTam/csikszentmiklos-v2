@@ -33,7 +33,6 @@ const StyledWrapper = styled(Grid)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
     maxWidth: "1400px",
-
     "> .banner-header--box": {
       position: "absolute",
       display: "flex",
@@ -50,19 +49,17 @@ const StyledWrapper = styled(Grid)(({ theme }) => ({
         left: "0",
         right: "0",
         alignItems: "center",
+        paddingLeft: "24px",
         ".banner-header--typography": {
           fontSize: "40px",
           lineHeight: "40px",
           width: "100%",
           zIndex: 10,
           color: theme.palette.white.main,
-          paddingLeft: "30px",
-          paddingRight: "30px",
           textAlign: "left",
         },
         ".title": {
-          fontSize: "55px",
-          lineHeight: "55px",
+          letterSpacing: "0px",
         },
       },
     },

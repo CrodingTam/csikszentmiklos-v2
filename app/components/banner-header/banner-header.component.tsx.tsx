@@ -15,7 +15,7 @@ const BannerHeader: FC = () => {
             <Typography variant="main" className="banner-header--typography">
               Welcome to
             </Typography>
-            <Typography variant="mainBold" className="banner-header--typography title">
+            <Typography variant="h1" className="banner-header--typography title">
               Csíkszentmiklós
             </Typography>
           </Box>

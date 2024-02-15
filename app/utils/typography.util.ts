@@ -40,8 +40,9 @@ declare module "@mui/material/Typography" {
 
 export const customVariant = {
   h1: {
-    fontFamily: "RalewaySemiBold",
-    fontSize: "67px",
+    fontFamily: "RalewayBold",
+    fontSize: "55px !important",
+    lineHeight: "55px !important",
     letterSpacing: "0.15px",
   },
   h2: {

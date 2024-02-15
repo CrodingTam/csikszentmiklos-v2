@@ -12,7 +12,7 @@ const Introduction: FC = () => {
   const { externalTo } = useNavigation();
   return (
     <>
-      <CommonHeader text="Introduction" type="component" />
+      <CommonHeader text="Introduction" />
       <StyledWrapper container className="introduction--grid-container">
         <Grid item xxs={6} className="introduction--grid-item">
           <Box className="introduction--box">

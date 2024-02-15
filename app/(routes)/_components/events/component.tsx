@@ -31,7 +31,7 @@ const staticEventCards: EventCardModel[] = [
 const Events: FC = () => {
   return (
     <>
-      <CommonHeader text="Upcoming Events" type="component" />
+      <CommonHeader text="Upcoming Events" />
       <StyledWrapper container>
         <Grid item className="event-card-item">
           <EventCards cards={staticEventCards} />

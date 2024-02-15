@@ -6,7 +6,7 @@ import GoogleMap from "./_components/google-map/component";
 const Contact = () => {
   return (
     <>
-      <CommonHeader text="Contact us" type="page" />
+      <CommonHeader text="Contact us" />
       <Container>
         <ContactCard />
         <GoogleMap />

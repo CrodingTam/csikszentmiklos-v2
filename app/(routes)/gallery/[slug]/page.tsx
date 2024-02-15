@@ -5,7 +5,7 @@ import GalleryImages from "./_components/gallery-images/component";
 const Gallery = () => {
   return (
     <>
-      <CommonHeader text="Moments of our community" type="page" />
+      <CommonHeader text="Moments of our community" />
       <Container>
         <GalleryImages />
       </Container>
