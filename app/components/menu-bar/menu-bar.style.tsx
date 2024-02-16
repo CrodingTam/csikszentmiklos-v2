@@ -5,7 +5,6 @@ import { AppBar } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(AppBar)(({ theme }) => ({
-  // boxShadow: "none",
   backgroundColor: lightTheme.palette.background.default,
   position: "sticky",
   ".menu-bar--container": {
