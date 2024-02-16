@@ -1,4 +1,5 @@
 import { TypographyStyle, TypographyStyleOptions } from "@mui/material/styles/createTypography";
+import { lightTheme } from "./theme.utils";
 
 interface CustomTypography {
   [index: string]: TypographyStyleOptions | TypographyStyle | string | number;

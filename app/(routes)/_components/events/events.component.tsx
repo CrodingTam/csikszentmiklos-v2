@@ -1,5 +1,5 @@
 import { FC } from "react";
-import StyledWrapper from "./style";
+import StyledWrapper from "./events.style";
 import { Grid } from "@mui/material";
 import { EventCardModel } from "@/app/models/event-card.model";
 import CommonHeader from "@/app/components/common-header/component";
@@ -33,7 +33,7 @@ const Events: FC = () => {
     <>
       <CommonHeader text="Upcoming Events" />
       <StyledWrapper container>
-        <Grid item className="event-card-item">
+        <Grid item className="events--grid-item">
           <EventCards cards={staticEventCards} />
         </Grid>
       </StyledWrapper>

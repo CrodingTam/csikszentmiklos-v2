@@ -2,8 +2,8 @@
 
 import { Box, Grid, Typography } from "@mui/material";
 import React, { FC, useCallback, useEffect, useState } from "react";
-import StyledWrapper from "./style";
 import CommonHeader from "@/app/components/common-header/component";
+import StyledWrapper from "./curiosities.style";
 
 export type Curiosities = {
   value: number;
@@ -16,25 +16,25 @@ const curiosities: Curiosities[] = [
   {
     value: 370,
     unit: "unit",
-    label: "Number of houses",
+    label: "Number of houses <br /> in the community",
     name: "house",
   },
   {
     value: 1080,
     unit: "person",
-    label: "Population",
+    label: "Population <br /> of the village",
     name: "residents",
   },
   {
     value: 15,
     unit: "century",
-    label: "Construction of the church",
+    label: "Construction <br /> of the church",
     name: "church-constuction",
   },
   {
     value: 1332,
     unit: "year",
-    label: "First mentions",
+    label: "First mentions <br /> about the settlement",
     name: "first-mentions",
   },
 ];
@@ -59,7 +59,7 @@ const Curiosities: FC = () => {
   }, []);
 
   const scrollHandler = useCallback(() => {
-    const target = document.querySelector(".curiosity-item") as HTMLElement;
+    const target = document.querySelector(".curiosities--grid-item") as HTMLElement;
     const rect = target?.getBoundingClientRect();
     if (
       !metricsDone &&
@@ -89,15 +89,26 @@ const Curiosities: FC = () => {
       <CommonHeader text="Curiosities" />
       <StyledWrapper container>
         {curiosities.map((curiosity) => (
-          <Grid className="curiosity-item" item key={curiosity.value}>
-            <Typography variant="mainSemiBold" className="curiosity-label">
-              {curiosity.label}
-            </Typography>
-            <Box className="curiosity-box">
-              <Typography variant="h3" className="curiosity-value">
+          <Grid
+            className="curiosities--grid-item"
+            lg={3}
+            xs={6}
+            xxs={12}
+            item
+            key={curiosity.value}
+          >
+            <Box className="curiosities--box">
+              <Typography
+                variant="mainSemiBold"
+                className=" curiosities--typography label"
+                dangerouslySetInnerHTML={{ __html: curiosity.label }}
+              />
+            </Box>
+            <Box className="curiosities--box">
+              <Typography variant="h3" className="curiosities--typography value">
                 {curiosity.value}
               </Typography>
-              <Typography variant="mainSemiBold" className="curiosity-unit">
+              <Typography variant="mainSemiBold" className="curiosities--typography unit">
                 {curiosity.unit}
               </Typography>
             </Box>
