@@ -1,16 +1,16 @@
 import { FC } from "react";
-import StyledWrapper from "./style";
+import StyledWrapper from "./contact-card.style";
 import { Grid } from "@mui/material";
 import ContactUs from "../contact-us/component";
-import Availability from "../availability/component";
+import Availability from "../availability/availability.component";
 
 const ContactCard: FC = () => {
   return (
     <StyledWrapper container>
-      <Grid item className="contact-form">
+      <Grid xxs={6} item className="contact-form">
         <ContactUs />
       </Grid>
-      <Grid item className="contact-info">
+      <Grid xxs={6} item className="contact-info">
         <Availability />
       </Grid>
     </StyledWrapper>

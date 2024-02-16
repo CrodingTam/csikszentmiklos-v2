@@ -13,7 +13,6 @@ const StyledWrapper = styled(Grid)(() => ({
   flexDirection: "row",
   height: "630px",
   ".contact-form": {
-    width: "50%",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

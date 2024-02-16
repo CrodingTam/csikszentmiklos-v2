@@ -27,7 +27,7 @@ const StyledWrapper = styled(Box)(() => ({
     ".input-wrapper": {
       width: "100%",
       display: "flex",
-      flexDirection: "column",
+      flexDirection: "row",
       justifyContent: "center",
       alignItems: "center",
       gap: lightTheme.spacing(2),
