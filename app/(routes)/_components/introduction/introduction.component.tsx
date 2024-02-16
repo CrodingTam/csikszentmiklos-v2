@@ -14,21 +14,20 @@ const Introduction: FC = () => {
     <>
       <CommonHeader text="Introduction" />
       <StyledWrapper container className="introduction--grid-container">
-        <Grid item xxs={6} className="introduction--grid-item">
+        <Grid item xxs={12} md={6} className="introduction--grid-item">
           <Box className="introduction--box">
-            <Typography className="introduction--typography" variant="h2">
+            <Typography className="introduction--typography title" variant="h2">
               Csíkszentmiklós
             </Typography>
-            <Typography className="introduction--typography" variant="h3">
+            <Typography className="introduction--typography subtitle" variant="h3">
               Our heritage
             </Typography>
             <Typography className="introduction--typography description" variant="h4">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
               has been the industrys standard dummy text ever since the 1500s.Lorem Ipsum is simply
               dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industrys standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of
-              the printing and typesetting industry. Lorem Ipsum has been the industrys standard
-              dummy text ever since the 1500s.
+              industrys standard dummy text ever since the 1500s. Lorem Ipsum has been the industrys
+              standard dummy text ever since the 1500s.
             </Typography>
             <Box>
               <PrimaryTransparentButton
@@ -41,7 +40,7 @@ const Introduction: FC = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid item xxs={6} className="introduction--grid-item">
+        <Grid item xxs={12} md={6} className="introduction--grid-item">
           <Img alt="csikszentmiklos-summer" src="/images/csikszentmiklos_summer.jpg" />
         </Grid>
       </StyledWrapper>
