@@ -1,4 +1,5 @@
 import { TypographyStyle, TypographyStyleOptions } from "@mui/material/styles/createTypography";
+import { lightTheme } from "./theme.utils";
 
 interface CustomTypography {
   [index: string]: TypographyStyleOptions | TypographyStyle | string | number;
@@ -40,8 +41,9 @@ declare module "@mui/material/Typography" {
 
 export const customVariant = {
   h1: {
-    fontFamily: "RalewaySemiBold",
-    fontSize: "67px",
+    fontFamily: "RalewayBold",
+    fontSize: "55px",
+    lineHeight: "55px",
     letterSpacing: "0.15px",
   },
   h2: {
@@ -70,7 +72,7 @@ export const customVariant = {
     fontSize: "16px",
   },
   main: {
-    fontFamily: "Raleway",
+    fontFamily: "RalewayLight",
     fontSize: "16px",
   },
   mainMedium: {

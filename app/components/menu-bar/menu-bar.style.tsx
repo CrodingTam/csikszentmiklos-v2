@@ -5,7 +5,6 @@ import { AppBar } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(AppBar)(({ theme }) => ({
-  // boxShadow: "none",
   backgroundColor: lightTheme.palette.background.default,
   position: "sticky",
   ".menu-bar--container": {
@@ -16,10 +15,11 @@ const StyledWrapper = styled(AppBar)(({ theme }) => ({
       },
     },
     [theme.breakpoints.down("md")]: {
+      paddingLeft: "16px !important",
+      paddingRight: "16px !important",
       ".menu-bar-desktop--grid-container": {
         display: "none",
       },
-      paddingRight: "10px",
     },
     [theme.breakpoints.down("sm")]: {
       paddingRight: "4px",

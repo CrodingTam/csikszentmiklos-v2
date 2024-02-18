@@ -2,6 +2,7 @@ import { FC } from "react";
 import StyledWrapper from "./desktop.style";
 import { Grid } from "@mui/material";
 import MenuItems from "./items/items.component";
+import Logo from "../logo/logo.component";
 
 const Desktop: FC = () => {
   return (

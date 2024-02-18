@@ -1,5 +1,5 @@
 import { FC } from "react";
-import StyledWrapper from "./style";
+import StyledWrapper from "./availability.style";
 import { Box, Typography } from "@mui/material";
 import Img from "@/app/components/image/component";
 

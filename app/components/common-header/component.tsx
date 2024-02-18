@@ -5,14 +5,14 @@ import { Grid, SxProps, Theme, Typography } from "@mui/material";
 type Props = {
   text: string;
   sx?: SxProps<Theme>;
-  type: "component" | "page";
+  titleVariant?: "h1" | "h2";
 };
 
-const CommonHeader: FC<Props> = ({ text, sx, type }) => {
+const CommonHeader: FC<Props> = ({ text, sx, titleVariant }) => {
   return (
-    <StyledWrapper type={type} container sx={{ ...sx }}>
+    <StyledWrapper container sx={{ ...sx }}>
       <Grid item className="title-item">
-        <Typography variant="h2">{text}</Typography>
+        <Typography variant={titleVariant ?? "h2"}>{text}</Typography>
       </Grid>
     </StyledWrapper>
   );

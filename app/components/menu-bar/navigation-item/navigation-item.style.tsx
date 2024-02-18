@@ -7,8 +7,9 @@ const StyledWrapper = styled(ListItem)(({ theme }) => ({
   width: "fit-content",
   paddingLeft: "0px",
   paddingRight: "0px",
-  ".navigation-item--link": {
+  ".navigation-item--box": {
     width: "fit-content !important",
+    cursor: "pointer",
   },
   ".inactive": {
     "&:before": {
@@ -16,7 +17,7 @@ const StyledWrapper = styled(ListItem)(({ theme }) => ({
       position: "absolute",
       width: "0",
       height: "3px",
-      bottom: "35px",
+      bottom: "5px",
       left: "50%",
       transform: "translate(-50%, 0%)",
       backgroundColor: theme.palette.primary.main,

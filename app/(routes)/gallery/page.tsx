@@ -5,7 +5,7 @@ import Container from "@/app/components/container/component";
 const Gallery = () => {
   return (
     <>
-      <Header text="Get to know our community through images" type="page" />
+      <Header text="Get to know our community through images" />
       <Container>
         <GalleryCards />
       </Container>

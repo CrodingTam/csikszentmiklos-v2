@@ -3,11 +3,15 @@
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
-const StyledWrapper = styled(Grid)((props: { type: "component" | "page" }) => ({
-  marginTop: props.type === "component" ? "80px" : "50px",
+const StyledWrapper = styled(Grid)(({ theme }) => ({
+  marginTop: "120px",
   marginBottom: "50px",
   width: "100%",
   justifyContent: "center",
+  [theme.breakpoints.down("md")]: {
+    marginTop: "80px",
+    marginBottom: "40px",
+  },
   ".title-item": {
     textAlign: "center",
   },

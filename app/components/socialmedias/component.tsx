@@ -11,12 +11,10 @@ type Props = {
 
 const SocialMedias: FC<Props> = ({ items }) => {
   return (
-    <StyledWrapper container className="social-medias-container">
+    <StyledWrapper className="social-medias-container">
       {items.map((item, index) => (
         <CustomLink url={item.link} key={index}>
-          <Grid item>
-            <Img src={item.src} alt={item.alt} />
-          </Grid>
+          <Img src={item.src} alt={item.alt} />
         </CustomLink>
       ))}
     </StyledWrapper>

@@ -1,54 +1,47 @@
-import { PopupItemModel } from "../models/popup-item.model";
+import { FooterItem } from "../components/footer/items/items.component";
 
-export const popupItems: PopupItemModel[] = [
+export const aboutUsItems: FooterItem[] = [
   {
-    name: "who we are",
+    label: "who we are",
     description: "Whooooo we areeeee",
-    type: "aboutUs",
   },
   {
-    name: "our goals",
+    label: "our goals",
     description: "Our goaaaaaallsssssssss",
-    type: "aboutUs",
   },
   {
-    name: "address",
+    label: "address",
     description: "This is our adress: csikszentmikloss ahahaha",
-    type: "aboutUs",
   },
   {
-    name: "events & news",
+    label: "events & news",
     description: "this is newwwwssss",
-    type: "aboutUs",
   },
   {
-    name: "community life",
+    label: "community life",
     description: "Community associationnnnnn",
-    type: "aboutUs",
   },
+];
+
+export const servicesItems: FooterItem[] = [
   {
-    name: "administrative",
+    label: "administrative",
     description: "administrative associationnnnnn",
-    type: "services",
   },
   {
-    name: "healthcare",
+    label: "healthcare",
     description: "Healthcare  associationnnnnn",
-    type: "services",
   },
   {
-    name: "education ",
+    label: "education ",
     description: "education opportunities associationnnnnn",
-    type: "services",
   },
   {
-    name: "leisure",
+    label: "leisure",
     description: "education opportunities associationnnnnn",
-    type: "services",
   },
   {
-    name: "cultural",
+    label: "cultural",
     description: "education opportunities associationnnnnn",
-    type: "services",
   },
 ];

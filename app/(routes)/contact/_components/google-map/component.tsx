@@ -8,7 +8,7 @@ import CommonHeader from "@/app/components/common-header/component";
 const GoogleMap: FC = () => {
   return (
     <>
-      <CommonHeader text="Find our location on the map" type="component" />
+      <CommonHeader text="Find our location on the map" />
       <StyledWrapper container>
         <Grid item>
           <iframe
