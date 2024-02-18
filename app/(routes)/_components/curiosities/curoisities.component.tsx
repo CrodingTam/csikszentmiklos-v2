@@ -69,7 +69,7 @@ const Curiosities: FC = () => {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     ) {
-      const curiositiesElements = document.querySelectorAll(".curiosity-value");
+      const curiositiesElements = document.querySelectorAll(".value");
       curiositiesElements.forEach((element) => {
         animateCounter(element, Number(element.innerHTML), 5000);
       });
