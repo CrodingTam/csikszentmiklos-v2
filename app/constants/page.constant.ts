@@ -11,7 +11,7 @@ const pageItems: PageItemModel[] = [
   },
   {
     label: "Community",
-    route: "",
+    route: "#",
     title: "Be part of the community",
     description: "Community lorem ipsum",
     keywords: ["home", "future home"],
@@ -19,7 +19,7 @@ const pageItems: PageItemModel[] = [
   },
   {
     label: "Economy",
-    route: "",
+    route: "#",
     title: "Csikszentmiklos's economy",
     description: "Economy lorem ipsum",
     keywords: ["home", "future home"],
@@ -27,7 +27,7 @@ const pageItems: PageItemModel[] = [
   },
   {
     label: "Institutions",
-    route: "",
+    route: "#",
     title: "Institutions",
     description: "Institutions lorem ipsum",
     keywords: ["home", "future home"],

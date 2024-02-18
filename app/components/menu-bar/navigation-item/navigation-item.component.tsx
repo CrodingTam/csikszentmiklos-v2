@@ -1,10 +1,12 @@
+"use client";
+
 import { FC, useCallback, useEffect, useState } from "react";
 import StyledWrapper from "./navigation-item.style";
-import CustomLink from "../../link/component";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { PageItemModel } from "@/app/models/page.model";
 import { usePathname } from "next/navigation";
 import { pageItems } from "@/app/constants/page.constant";
+import useNavigation from "@/app/hooks/navigation.hook";
 
 type Props = {
   item: PageItemModel;
@@ -14,6 +16,7 @@ type Props = {
 const NavigationItem: FC<Props> = ({ item, onClickItem = () => {} }) => {
   const [activeItem, setActiveItem] = useState<PageItemModel | undefined>(undefined);
   const pathName = usePathname();
+  const { to } = useNavigation();
 
   const handleActiveItemChange = useCallback(() => {
     let page = pageItems.find((item) => item.route === pathName);
@@ -30,13 +33,13 @@ const NavigationItem: FC<Props> = ({ item, onClickItem = () => {} }) => {
       onClick={() => {
         handleActiveItemChange();
         onClickItem();
+        to(item.route);
       }}
     >
-      <CustomLink
-        className={`navigation-item--link ${
+      <Box
+        className={`navigation-item--box ${
           activeItem?.route === item.route ? "active" : "inactive"
         }`}
-        url={item.route}
       >
         <Typography
           className="navigation-item--typography"
@@ -47,7 +50,7 @@ const NavigationItem: FC<Props> = ({ item, onClickItem = () => {} }) => {
         >
           {item.label}
         </Typography>
-      </CustomLink>
+      </Box>
     </StyledWrapper>
   );
 };

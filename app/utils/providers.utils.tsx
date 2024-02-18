@@ -2,6 +2,7 @@
 import { FC } from "react";
 import CustomThemeProvider from "../contexts/theme.context";
 import { SnackbarProvider } from "notistack";
+import { PopupProvider } from "../contexts/popup/popup.context";
 
 type Props = {
   children: React.ReactNode;
@@ -10,14 +11,16 @@ type Props = {
 const Providers: FC<Props> = ({ children }) => {
   return (
     <CustomThemeProvider>
-      <SnackbarProvider
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "center",
-        }}
-      >
-        {children}
-      </SnackbarProvider>
+      <PopupProvider>
+        <SnackbarProvider
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "center",
+          }}
+        >
+          {children}
+        </SnackbarProvider>
+      </PopupProvider>
     </CustomThemeProvider>
   );
 };

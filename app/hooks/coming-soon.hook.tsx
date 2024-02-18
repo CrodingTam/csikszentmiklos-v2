@@ -1,4 +1,4 @@
-import ComingSoon from "../components/comingSoon/coming-soon.component";
+import ComingSoonButton from "../components/primary-transparent-button/component";
 import { Options } from "../contexts/popup/popup.context";
 import { usePopupContext } from "./contexts.hook";
 
@@ -7,9 +7,13 @@ const useComingSoon = () => {
 
   const openComingSoon = (): void => {
     updateOptions({
-      content: <ComingSoon onOkClick={() => setOptions({} as Options)} />,
+      content: <ComingSoonButton text="Ok" onClick={() => setOptions({} as Options)} />,
       title: "Coming soon",
-      paperSx: { width: "337px", height: "187px", opacity: "1 !important" },
+      paperSx: {
+        width: "337px",
+        height: "fit-content",
+        opacity: "1 !important",
+      },
     });
   };
 

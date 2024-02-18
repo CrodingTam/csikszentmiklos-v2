@@ -4,13 +4,13 @@ import { FC } from "react";
 import StyledWrapper from "./footer.style";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Img from "../image/component";
-import useNavigation from "@/app/hooks/navigation.hook";
 import SocialMedias from "../socialmedias/component";
 import { socialMediaItems } from "@/app/constants/socal-media.constant";
 import { pageItems } from "@/app/constants/page.constant";
 
 import Items from "./items/items.component";
 import { aboutUsItems, servicesItems } from "@/app/constants/footer-items.constant";
+import useNavigation from "@/app/hooks/navigation.hook";
 
 const FooterBar: FC = () => {
   const { to } = useNavigation();
