@@ -44,6 +44,7 @@ const PrimaryTransparentButton: FC<Props> = ({
         width: width ?? "60px",
         marginTop: marginTop ?? 0,
         borderColor: "primary.main",
+        minWidth: "80px",
         ...sx,
       }}
     >

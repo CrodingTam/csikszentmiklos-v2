@@ -56,14 +56,14 @@ const StyledWrapper = styled(Grid)(({ theme }) => ({
         },
       },
       ".description": {
-        textAlign: "center",
+        textAlign: "justify",
         [theme.breakpoints.down("lg")]: {
           fontSize: "16px",
         },
         [theme.breakpoints.down("sm")]: {
           maxHeight: "100px",
           overflowY: "auto",
-          paddingRight: "5px",
+          paddingRight: "10px",
           "::-webkit-scrollbar": {
             opacity: "1 !important",
             width: "4px",

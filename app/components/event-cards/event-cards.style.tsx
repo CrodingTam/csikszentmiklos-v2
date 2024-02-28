@@ -43,7 +43,7 @@ const StyledWrapper = styled(Grid)(({ theme }) => ({
         },
       },
       ".event-card--box-third": {
-        textAlign: "center",
+        textAlign: "justify",
       },
       ".event-card--box-fourth": {
         backgroundColor: theme.palette.primary.main,

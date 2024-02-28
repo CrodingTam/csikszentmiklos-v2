@@ -36,7 +36,7 @@ const FooterBar: FC = () => {
             </Box>
           </Grid>
           <Grid item className="footer--grid-item">
-            <Items title="Home" items={pageItems.filter((item) => item.label !== "Home")} />
+            <Items title="Pages" items={pageItems.filter((item) => item.label !== "Home")} />
           </Grid>
           <Grid item className="footer--grid-item">
             <Items title="About Us" items={aboutUsItems} />
