@@ -11,7 +11,7 @@ const pageItems: PageItemModel[] = [
   },
   {
     label: "Community",
-    route: "#",
+    route: "/community",
     title: "Be part of the community",
     description: "Community lorem ipsum",
     keywords: ["home", "future home"],
