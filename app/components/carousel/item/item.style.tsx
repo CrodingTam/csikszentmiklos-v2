@@ -5,7 +5,6 @@ import { styled } from "@mui/material/styles";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.white.main,
-  height: "500px",
   boxShadow: "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
   borderRadius: "10px",
   borderColor: theme.palette.primary.main,
@@ -13,6 +12,13 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   overflow: "hidden",
   cursor: "pointer",
+  height: "500px",
+  [theme.breakpoints.down("lg")]: {
+    height: "450px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    height: "400px",
+  },
   ".carousel-item--box:nth-of-type(1)": {
     position: "relative",
     zIndex: 1,

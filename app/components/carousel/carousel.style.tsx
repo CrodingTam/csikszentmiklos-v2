@@ -9,6 +9,15 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
     width: "550px !important",
     height: "530px !important",
     backgroundColor: "#ffefe5",
+    [theme.breakpoints.down("xl")]: {
+      width: "450px !important",
+    },
+    [theme.breakpoints.down("lg")]: {
+      width: "400px !important",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "100% !important",
+    },
   },
 }));
 

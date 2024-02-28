@@ -24,9 +24,6 @@ const Item: FC<Props> = ({ slide }) => {
             <Typography className="carousel-item--typography description" variant="h4">
               {slide.description}
             </Typography>
-            {/* <Typography className="carousel-item--typography more-content" variant="mainMedium">
-              Click here for more content
-            </Typography> */}
           </Box>
         </Box>
       </StyledWrapper>

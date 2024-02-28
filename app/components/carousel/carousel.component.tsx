@@ -17,13 +17,14 @@ const Carousel: FC<Props> = ({ slides }) => {
   return (
     <StyledWrapper>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={"auto"}
         spaceBetween={16}
         pagination={{
           dynamicBullets: true,
         }}
         modules={[Pagination]}
         className="mySwiper"
+        centeredSlides={true}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
